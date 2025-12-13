@@ -105,7 +105,7 @@
     <hr class="my-8 border-gray-300">
 
     <!-- Projects Section -->
-    <section class="mb-12">
+    <!-- <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">Projects</h2>
       <div class="space-y-6">
         <div>
@@ -114,28 +114,45 @@
           <a href="#" class="text-sm hover:underline">View Project →</a>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <hr class="my-8 border-gray-300">
+    <!-- <hr class="my-8 border-gray-300"> -->
 
     <!-- Skills Section -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">Skills</h2>
       <div class="space-y-2">
         <div>
-          <span class="font-semibold">Languages:</span>
-          <span class="text-gray-700 ml-2">Golang, JavaScript, TypeScript, Python</span>
+          <span class="font-semibold">Languages</span>
+          <span class="text-gray-700 ml-4">Golang, JavaScript, TypeScript, Python</span>
         </div>
         <div>
-          <span class="font-semibold">Frameworks:</span>
-          <span class="text-gray-700 ml-2">net/http(Go),Fiber(Go), Ent(Go) Vue.js</span>
+          <span class="font-semibold">Frameworks</span>
+          <span class="text-gray-700 ml-4">net/http(Go),Fiber(Go), Ent(Go) Vue.js</span>
         </div>
         <div>
-          <span class="font-semibold">Cyber Security Equipment:</span>
-          <span class="text-gray-700 ml-2">Splunk SIEM, AhnLab SOAR, AhnLab UTM · TMS · IPS · IDS, Genian NAC</span>
+          <span class="font-semibold">DataBase</span>
+          <span class="text-gray-700 ml-4">MySQL, SQLite, PostgreSQL</span>
+        </div>
+        <div>
+          <span class="font-semibold">Cyber Security Equipment</span>
+          <span class="text-gray-700 ml-4">Splunk SIEM, AhnLab SOAR, AhnLab UTM · TMS · IPS · IDS, Genian NAC</span>
         </div>
       </div>
     </section>
+
+    <hr class="my-8 border-gray-300">
+
+    <!-- Email Collection Notice -->
+    <footer class="mb-8">
+      <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+        <h3 class="text-lg font-bold mb-3 text-gray-800">이메일 무단 수집 거부</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">
+          본 사이트 상에 기재(게시)되어 있는 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치(프로그램) 등을 이용하여 무단으로 수집되는 것을 거부합니다.
+          이러한 거부 사항을 기재하였음에도 불구하고 무단으로 수집 및 이용할 시 정보통신망법에 의해 형사처벌됨을 유의하시길 바랍니다.
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
