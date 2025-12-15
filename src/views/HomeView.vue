@@ -73,8 +73,7 @@
           <p class="text-sm text-gray-600 mb-2">2024.3 - 2025.9 / 실제 직책수행 - 2024.5 ~ 2025.9</p>
           <div>
             <p class="font-semibold text-m">[1] 육군 작전통제부대 대 · 내외 사이버작전상황 관리 및 침해대응사고 초기대응 임무수행</p>
-            <p class="font-semibold text-m">[2] 내부 침해 행위 관련 육군수사단 사이버범죄 인지수사 도움</p>
-            <p class="font-semibold text-m">[3] 유관기관 침해행위 첩보 등을 통한 침해지표 접근 차단</p>
+            <p class="font-semibold text-m">[2] 유관기관 침해행위 첩보 등을 통한 보안장비를 통한 침해지표 접근 차단</p>
           </div>
         </div>
       </div>
@@ -86,6 +85,7 @@
           <p class="text-gray-700">Software Engineer</p>
           <p class="text-sm text-gray-600 mb-2">2021.8 - 2023.8</p>
           <p  class="font-semibold text-m">[1] Go언어를 이용한 미디어프로세싱 시스템 개발</p>
+          <p class="font-semibold text-m">[2] 사내 개발 문서 가이드라인 작성 및 개발 문서 관리 방안 고안</p>
         </div>
       </div>
     </section>
