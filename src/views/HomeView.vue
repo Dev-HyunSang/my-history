@@ -137,12 +137,12 @@
       <h2 class="text-2xl font-bold mb-4">Skills</h2>
       <div class="space-y-2">
         <div>
-          <span class="font-semibold">Languages</span>
+          <span class="font-semibold">Programming Languages</span>
           <span class="text-gray-700 ml-4">Golang, JavaScript, TypeScript, Python</span>
         </div>
         <div>
           <span class="font-semibold">Frameworks</span>
-          <span class="text-gray-700 ml-4">net/http(Go),Fiber(Go), Ent(Go) Vue.js</span>
+          <span class="text-gray-700 ml-4">net/http(Go), Fiber(Go), Ent(Go) Vue.js</span>
         </div>
         <div>
           <span class="font-semibold">DataBase</span>
