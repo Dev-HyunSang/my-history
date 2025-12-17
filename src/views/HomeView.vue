@@ -11,7 +11,7 @@
           <p class="text-lg text-gray-700">Software Engineer</p>
         </div>
       </div>
-      <div class="flex flex-wrap gap-3">
+      <div class="flex flex-wrap gap-3 justify-center">
         <a
           href="https://blog.hyunsang.dev"
           class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
@@ -39,6 +39,13 @@
         >
           <BriefcaseIcon class="w-5 h-5" />
           <span>LinkedIn</span>
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1PKBiYUgPUe9VH5R_OzBVbO642wUREXIM/view?usp=sharing"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+        >
+          <DocumentTextIcon class="w-5 h-5" />
+          <span>Resume</span>
         </a>
       </div>
     </header>
@@ -177,6 +184,7 @@ import {
   CodeBracketIcon,
   EnvelopeIcon,
   BriefcaseIcon,
+  DocumentTextIcon,
 } from '@heroicons/vue/24/outline';
 
 @Options({
@@ -185,6 +193,7 @@ import {
     CodeBracketIcon,
     EnvelopeIcon,
     BriefcaseIcon,
+    DocumentTextIcon,
   },
 })
 
