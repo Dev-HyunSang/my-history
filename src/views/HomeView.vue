@@ -91,7 +91,7 @@
           </div>
           <p class="text-gray-700">Software Engineer</p>
           <p class="text-sm text-gray-600 mb-2">2021.8 - 2023.8</p>
-          <p  class="font-semibold text-m">[1] Go언어를 이용한 미디어프로세싱 시스템 개발</p>
+          <p class="font-semibold text-m">[1] Go언어를 이용한 미디어프로세싱 시스템 개발</p>
           <p class="font-semibold text-m">[2] 사내 개발 문서 가이드라인 작성 및 개발 문서 관리 방안 고안</p>
         </div>
       </div>
@@ -149,11 +149,15 @@
         </div>
         <div>
           <span class="font-semibold">Frameworks</span>
-          <span class="text-gray-700 ml-4">net/http(Go), Fiber(Go), Ent(Go) Vue.js</span>
+          <span class="text-gray-700 ml-4">net/http(Go), Fiber(Go), Ent(Go) Vue.js, NestJS (Study)</span>
         </div>
         <div>
           <span class="font-semibold">DataBase</span>
           <span class="text-gray-700 ml-4">MySQL, SQLite, PostgreSQL</span>
+        </div>
+        <div>
+          <span class="font-semibold">Infrastructure</span>
+          <span class="text-gray-700 ml-4">Kubernetes, AWS EC2 · S3 · CloudFront, NCP Server · Object Storage</span>
         </div>
         <div>
           <span class="font-semibold">Cyber Security Equipment</span>
