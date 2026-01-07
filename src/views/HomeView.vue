@@ -149,7 +149,7 @@
         </div>
         <div>
           <span class="font-semibold">Frameworks</span>
-          <span class="text-gray-700 ml-4">net/http(Go), Fiber(Go), Ent(Go) Vue.js, NestJS (Study)</span>
+          <span class="text-gray-700 ml-4">net/http(Go), Fiber(Go), Ent(Go) Vue.js, NestJS(Study)</span>
         </div>
         <div>
           <span class="font-semibold">DataBase</span>
@@ -157,7 +157,7 @@
         </div>
         <div>
           <span class="font-semibold">Infrastructure</span>
-          <span class="text-gray-700 ml-4">Kubernetes, AWS EC2 · S3 · CloudFront, NCP Server · Object Storage</span>
+          <span class="text-gray-700 ml-4">AWS EC2 · S3 · CloudFront, NCP Server · Object Storage</span>
         </div>
         <div>
           <span class="font-semibold">Cyber Security Equipment</span>
