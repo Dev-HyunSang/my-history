@@ -41,7 +41,7 @@
           <span>LinkedIn</span>
         </a>
         <a
-          href="https://drive.google.com/file/d/1PKBiYUgPUe9VH5R_OzBVbO642wUREXIM/view?usp=sharing"
+          href="https://drive.google.com/file/d/1kINYVf1PXgfA7UO0NlWUA5INtrNXQQ5E/view?usp=sharing"
           class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
         >
           <DocumentTextIcon class="w-5 h-5" />
