@@ -10,9 +10,16 @@ export default {
   },
   education: {
     title: 'Education',
-    university: '순천향대학교',
-    major: '정보보호학, 학사',
-    period: '2023.2 - 2029.2',
+    school1: {
+      name: '순천향대학교',
+      major: '정보보호학, 학사',
+      period: '2023.2 - 2029.2',
+    },
+    school2: {
+      name: '순천향대학교',
+      major: '법학, 부전공',
+      period: '2026.2 - 2029.2',
+    },
   },
   work: {
     title: 'Work Experience',

@@ -92,10 +92,17 @@
       <div class="space-y-4">
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('education.university') }}</span>
+            <span class="font-semibold">{{ t('education.school1.name') }}</span>
           </div>
-          <p class="text-gray-700">{{ t('education.major') }}</p>
-          <p class="text-sm text-gray-600">{{ t('education.period') }}</p>
+          <p class="text-gray-700">{{ t('education.school1.major') }}</p>
+          <p class="text-sm text-gray-600">{{ t('education.school1.period') }}</p>
+        </div>
+        <div>
+          <div class="flex items-center gap-2 text-xl">
+            <span class="font-semibold">{{ t('education.school2.name') }}</span>
+          </div>
+          <p class="text-gray-700">{{ t('education.school2.major') }}</p>
+          <p class="text-sm text-gray-600">{{ t('education.school2.period') }}</p>
         </div>
       </div>
     </section>

@@ -10,9 +10,16 @@ export default {
   },
   education: {
     title: 'Education',
-    university: 'Soonchunhyang University',
-    major: 'Information Security, Bachelor',
-    period: '2023.2 - 2029.2',
+    school1: {
+      name: 'Soonchunhyang University',
+      major: 'Information Security, Bachelor',
+      period: '2023.2 - 2029.2',
+    },
+    school2: {
+      name: 'Soonchunhyang University',
+      major: 'Minor in Law',
+      period: '2026.2 - 2029.2',
+    },
   },
   work: {
     title: 'Work Experience',
