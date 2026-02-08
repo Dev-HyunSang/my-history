@@ -2,14 +2,5 @@
   "buildCommand": "yarn build",
   "devCommand": "yarn serve",
   "installCommand": "yarn install",
-  "framework": "vue",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "nodeVersion": "20.x"
-      }
-    }
-  ]
+  "framework": "vue"
 }
