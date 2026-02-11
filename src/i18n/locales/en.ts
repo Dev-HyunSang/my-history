@@ -12,7 +12,7 @@ export default {
     title: 'Education',
     school1: {
       name: 'Soonchunhyang University',
-      major: 'Information Security, Bachelor',
+      major: 'Information Security, Bachelor of Engineering - BE',
       period: '2023.2 - 2029.2',
     },
     school2: {

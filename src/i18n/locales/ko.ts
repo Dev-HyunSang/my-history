@@ -12,7 +12,7 @@ export default {
     title: 'Education',
     school1: {
       name: '순천향대학교',
-      major: '정보보호학, 학사',
+      major: '정보보호학, 공학사',
       period: '2023.2 - 2029.2',
     },
     school2: {
