@@ -55,6 +55,21 @@ export default {
         '[2] GopherCon Korea 2023 전반적인 행사 계획(준비위원회 수립 / 미디어팀 리드 / CoC팀)',
     },
   },
+  projects: {
+    title: 'Projects',
+    project1: {
+      name: 'VMS(Video Management System) at @TeamGRIT, Inc.',
+      description: '팀그릿에서 송출되는 영상을 저장하고 HLS 프로토콜을 사용할 수 있는 동영상 관리 시스템을 개발하였습니다.',
+      period: '2022.08 ~ 2023.06',
+      stack: 'Golang, FFmpeg(HLS), AWS(S3, CloudFront), GitHub Actions, Docker',
+    },
+    project2: {
+      name: '나만의 서재',
+      description: '가지고 있는 서적을 등록하여 관리하며, 독후감을 남기고 공유할 수 있는 서비스입니다.',
+      period: '2026.01 ~ 2026.02',
+      stack: 'Golang, Flutter, Docker, Azure(VM · DataBase for MySQL, Cache for Redis), GitHub Actions',
+    },
+  },
   skills: {
     title: 'Skills',
     programming: 'Programming Languages',

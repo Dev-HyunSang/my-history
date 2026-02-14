@@ -166,6 +166,31 @@
 
     <hr class="my-8 border-gray-300">
 
+    <!-- Projects Section -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">{{ t('projects.title') }}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="border border-gray-200 rounded-lg p-4">
+          <div class="flex items-center gap-2 text-xl">
+            <span class="font-semibold">{{ t('projects.project1.name') }}</span>
+          </div>
+          <p class="text-sm text-gray-600">{{ t('projects.project1.period') }}</p>
+          <p class="text-gray-700 mt-2">{{ t('projects.project1.description') }}</p>
+          <p class="text-sm text-gray-500 mt-2">{{ t('projects.project1.stack') }}</p>
+        </div>
+        <div class="border border-gray-200 rounded-lg p-4">
+          <div class="flex items-center gap-2 text-xl">
+            <span class="font-semibold">{{ t('projects.project2.name') }}</span>
+          </div>
+          <p class="text-sm text-gray-600">{{ t('projects.project2.period') }}</p>
+          <p class="text-gray-700 mt-2">{{ t('projects.project2.description') }}</p>
+          <p class="text-sm text-gray-500 mt-2">{{ t('projects.project2.stack') }}</p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-8 border-gray-300">
+
     <!-- Skills Section -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">{{ t('skills.title') }}</h2>
@@ -184,7 +209,9 @@
         </div>
         <div>
           <span class="font-semibold">{{ t('skills.infrastructure') }}</span>
-          <span class="text-gray-700 ml-4">AWS EC2 · S3 · CloudFront, NCP Server · Object Storage</span>
+          <span class="text-gray-700 ml-4">
+            AWS EC2 · S3 · CloudFront, NCP Server · Object Storage, Azure Virtual Machines · DataBase for MySQL, Cache for Redis
+          </span>
         </div>
         <div>
           <span class="font-semibold">{{ t('skills.security') }}</span>

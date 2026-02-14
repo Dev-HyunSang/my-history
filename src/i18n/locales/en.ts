@@ -62,6 +62,21 @@ export default {
         + '(Organizing committee establishment / Media team lead / CoC team)',
     },
   },
+  projects: {
+    title: 'Projects',
+    project1: {
+      name: 'VMS(Video Management System) at @TeamGRIT, Inc.',
+      description: 'Developed a video management system that stores videos from TeamGRIT and allows them to be viewed using the HLS protocol.',
+      period: '2022.08 ~ 2023.06',
+      stack: 'Golang, FFmpeg(HLS), SQLite, MySQL, AWS(EC2 · S3 · CloudFront), NCP(VM · Object Storage), Docker, GitHub Actions',
+    },
+    project2: {
+      name: 'My Own Library',
+      description: 'Register and manage your books, write reviews, and share them with others.',
+      period: '2026.01 ~ 2026.02',
+      stack: 'Golang, Flutter, Azure(VM · DataBase for MySQL, Cache for Redis), Docker, GitHub Actions',
+    },
+  },
   skills: {
     title: 'Skills',
     programming: 'Programming Languages',
