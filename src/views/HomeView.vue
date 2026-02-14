@@ -201,7 +201,7 @@
         </div>
         <div>
           <span class="font-semibold">{{ t('skills.frameworks') }}</span>
-          <span class="text-gray-700 ml-4">net/http(Go), Fiber(Go), Ent(Go) Vue.js, NestJS(Study)</span>
+          <span class="text-gray-700 ml-4">net/http(Go), Fiber(Go), Ent(Go) Vue.js, NestJS(Study), Swagger API</span>
         </div>
         <div>
           <span class="font-semibold">{{ t('skills.database') }}</span>
