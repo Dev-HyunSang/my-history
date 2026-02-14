@@ -65,7 +65,7 @@ export default {
   projects: {
     title: 'Projects',
     project1: {
-      name: 'VMS(Video Management System) at @TeamGRIT, Inc.',
+      name: "VMS(Video Management System) at {'@'}TeamGRIT, Inc.",
       description: 'Developed a video management system that stores videos from TeamGRIT and allows them to be viewed using the HLS protocol.',
       period: '2022.08 ~ 2023.06',
       stack: 'Golang, FFmpeg(HLS), SQLite, MySQL, AWS(EC2 · S3 · CloudFront), NCP(VM · Object Storage), Docker, GitHub Actions',
