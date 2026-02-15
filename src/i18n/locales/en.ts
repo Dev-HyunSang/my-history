@@ -69,12 +69,16 @@ export default {
       description: 'Developed a video management system that stores videos from TeamGRIT and allows them to be viewed using the HLS protocol.',
       period: '2022.08 ~ 2023.06',
       stack: 'Golang, FFmpeg(HLS), SQLite, MySQL, AWS(EC2 · S3 · CloudFront), NCP(VM · Object Storage), Docker, GitHub Actions',
+      github: null,
+      blog: null,
     },
     project2: {
       name: 'My Own Library',
       description: 'Register and manage your books, write reviews, and share them with others.',
       period: '2026.01 ~ 2026.02',
       stack: 'Golang, Flutter, Azure(VM · DataBase for MySQL, Cache for Redis), Docker, GitHub Actions',
+      github: 'https://github.com/dev-hyunsang/my-own-library-backend',
+      blog: 'https://blog.hyunsang.dev/posts/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%82%98%EB%A7%8C%EC%9D%98-%EC%84%9C%EC%9E%AC/',
     },
   },
   skills: {

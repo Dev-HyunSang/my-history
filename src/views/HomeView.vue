@@ -177,6 +177,14 @@
           <p class="text-sm text-gray-600">{{ t('projects.project1.period') }}</p>
           <p class="text-gray-700 mt-2">{{ t('projects.project1.description') }}</p>
           <p class="text-sm text-gray-500 mt-2">{{ t('projects.project1.stack') }}</p>
+          <div class="flex gap-2 mt-3">
+             <a v-if="t('projects.project1.github')" :href="t('projects.project1.github')" target="_blank" class="text-gray-500 hover:text-black transition-colors">
+              <CodeBracketIcon class="w-5 h-5" />
+            </a>
+            <a v-if="t('projects.project1.blog')" :href="t('projects.project1.blog')" target="_blank" class="text-gray-500 hover:text-black transition-colors">
+              <NewspaperIcon class="w-5 h-5" />
+            </a>
+          </div>
         </div>
         <div class="border border-gray-200 rounded-lg p-4">
           <div class="flex items-center gap-2 text-xl">
@@ -185,6 +193,14 @@
           <p class="text-sm text-gray-600">{{ t('projects.project2.period') }}</p>
           <p class="text-gray-700 mt-2">{{ t('projects.project2.description') }}</p>
           <p class="text-sm text-gray-500 mt-2">{{ t('projects.project2.stack') }}</p>
+          <div class="flex gap-2 mt-3">
+             <a v-if="t('projects.project2.github')" :href="t('projects.project2.github')" target="_blank" class="text-gray-500 hover:text-black transition-colors">
+              <CodeBracketIcon class="w-5 h-5" />
+            </a>
+            <a v-if="t('projects.project2.blog')" :href="t('projects.project2.blog')" target="_blank" class="text-gray-500 hover:text-black transition-colors">
+              <NewspaperIcon class="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

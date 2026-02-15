@@ -62,12 +62,16 @@ export default {
       description: '팀그릿에서 송출되는 영상을 저장하고 HLS 프로토콜을 사용할 수 있는 동영상 관리 시스템을 개발하였습니다.',
       period: '2022.08 ~ 2023.06',
       stack: 'Golang, FFmpeg(HLS), AWS(S3, CloudFront), GitHub Actions, Docker',
+      github: null,
+      blog: null,
     },
     project2: {
       name: '나만의 서재',
       description: '가지고 있는 서적을 등록하여 관리하며, 독후감을 남기고 공유할 수 있는 서비스입니다.',
       period: '2026.01 ~ 2026.02',
       stack: 'Golang, Flutter, Docker, Azure(VM · DataBase for MySQL, Cache for Redis), GitHub Actions',
+      github: 'https://github.com/dev-hyunsang/my-own-library-backend',
+      blog: 'https://blog.hyunsang.dev/posts/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%82%98%EB%A7%8C%EC%9D%98-%EC%84%9C%EC%9E%AC/',
     },
   },
   skills: {
