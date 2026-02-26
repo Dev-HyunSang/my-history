@@ -25,7 +25,7 @@ export default {
     title: 'Work Experience',
     army: {
       name: 'ROK Army Cyber Operations Center',
-      position: 'Information Security (Cyber Monitoring) MOS / CERT',
+      position: 'Information Security (Cyber Monitoring) MOS / CERT / Information Security 24-1st',
       period: '2024.3 - 2025.9 / Center Duty: 2024.5 ~ 2025.9',
       task1:
         '[1] Managed cyber operation situations and performed initial incident response for '
@@ -74,7 +74,7 @@ export default {
     },
     project2: {
       name: 'My Own Library',
-      description: 'Register and manage your books, write reviews, and share them with others.',
+      description: 'This service enables users to register and manage their personal book collections using ISBN barcodes and other identifiers, while also allowing them to post book reviews and share them with other users.',
       period: '2026.01 ~ 2026.02',
       stack: 'Golang, Flutter, Azure(VM · DataBase for MySQL, Cache for Redis), Docker, GitHub Actions',
       github: 'https://github.com/dev-hyunsang/my-own-library-backend',

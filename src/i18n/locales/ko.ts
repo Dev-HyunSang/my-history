@@ -25,7 +25,7 @@ export default {
     title: 'Work Experience',
     army: {
       name: '육군 사이버작전센터 O작전단',
-      position: '정보보호(사이버관제)병 / CERT',
+      position: '정보보호(사이버관제)병 / CERT / 정보보호 24-1기',
       period: '2024.3 - 2025.9 / 실제 직책수행 - 2024.5 ~ 2025.9',
       task1:
         '[1] 육군 작전통제부대 대 · 내외 사이버작전상황 관리 및 침해대응사고 초기대응 임무수행',
@@ -67,7 +67,7 @@ export default {
     },
     project2: {
       name: '나만의 서재',
-      description: '가지고 있는 서적을 등록하여 관리하며, 독후감을 남기고 공유할 수 있는 서비스입니다.',
+      description: '자신이 소유하고 있는 서적을 ISBN 바코드 등을 이용하여 등록, 관리하며, 독후감을 남기고 사용자들에게 공유할 수 있는 서비스입니다.',
       period: '2026.01 ~ 2026.02',
       stack: 'Golang, Flutter, Docker, Azure(VM · DataBase for MySQL, Cache for Redis), GitHub Actions',
       github: 'https://github.com/dev-hyunsang/my-own-library-backend',
@@ -80,7 +80,7 @@ export default {
     frameworks: 'Frameworks',
     database: 'DataBase',
     infrastructure: 'Infrastructure',
-    security: 'Cyber Security Equipment',
+    security: 'Cyber Security Solution',
   },
   footer: {
     title: '이메일 무단 수집 거부',
