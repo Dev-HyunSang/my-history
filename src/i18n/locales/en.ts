@@ -61,6 +61,11 @@ export default {
         '[2] Overall event planning for GopherCon Korea 2023 '
         + '(Organizing committee establishment / Media team lead / CoC team)',
     },
+    pycon_korea: {
+      name: 'PyCon Korea',
+      period: '2026.02 ~ / Media Team / park.hyunsang@python.or.kr',
+      task1: '[1] PyCon Korea 2026 Media Team',
+    },
   },
   projects: {
     title: 'Projects',
