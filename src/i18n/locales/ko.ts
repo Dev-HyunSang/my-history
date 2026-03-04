@@ -56,7 +56,7 @@ export default {
     },
     pycon_korea: {
       name: 'PyCon Korea',
-      period: '2026.02 ~ / 미디어팀 / park.hyunsang@python.or.kr',
+      period: "2026.02 ~ / 미디어팀 / park.hyunsang{'@'}python.or.kr",
       task1: '[1] PyCon Korea 2026 미디어팀 활동',
     },
   },
