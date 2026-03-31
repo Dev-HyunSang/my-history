@@ -85,7 +85,7 @@
           <span>{{ t('profile.linkedin') }}</span>
         </a>
         <a
-          href="https://drive.google.com/file/d/1kINYVf1PXgfA7UO0NlWUA5INtrNXQQ5E/view?usp=sharing"
+          href="https://drive.google.com/file/d/1V9g8ykFg2B8mj5i-2vQugmuyhULxZOd3/view?usp=drivesdk"
           class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors"
         >
           <DocumentTextIcon class="w-5 h-5" />
