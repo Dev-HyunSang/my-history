@@ -23,29 +23,51 @@ export default {
   },
   work: {
     title: 'Work Experience',
+    viewDetails: '자세히 보기 →',
+    back: '← 돌아가기',
+    alan: {
+      name: 'Alan Inc.',
+      position: 'Physical computing engineer',
+      period: '2026.09 ~ 현재',
+    },
     army: {
       name: '육군 사이버작전센터 O작전단',
-      position: '정보보호(사이버관제)병 / CERT / 정보보호 24-1기',
-      period: '2024.3 - 2025.9 / 실제 직책수행 - 2024.5 ~ 2025.9',
+      position: '정보보호(사이버관제)병 / Computer Emergency Response Team',
+      period: '2024.3 - 2025.9 / 관제 직책수행 - 2024.5 ~ 2025.9',
+      location: '계룡시, 대한민국',
       task1:
-        '[1] 육군 작전통제부대 대 · 내외 사이버작전상황 관리 및 침해대응사고 초기대응 임무수행',
+        '[1] 육군 작전통제부대(육직, 작전사, 군/사단) 대/내외 사이버작전상황 관리 및 침해대응사고 초기대응 임무수행',
       task2:
-        '[2] 유관기관 침해행위 첩보 등을 통한 보안장비를 통한 침해지표 접근 차단',
+        '[2] Splunk SIEM, AhnLab SOAR, AhnLab UTM · TMS · IPS · WAF, Genians NAC 등 보안 솔루션 및 장비 운영 및 내/외부망 사이버침해행위 식별 및 차단',
+      task3:
+        '국가정보원 주최 · 국가보안기술연구소 주관  2025 사이버공격방어대회(CCE) 공공부 본선 참여',
+      details: [
+        '육군 작전통제부대(육직, 작전사, 군/사단) 대/내외 사이버작전상황 관리 및 침해대응사고 초기대응 임무수행',
+        'Splunk SIEM, AhnLab SOAR, AhnLab UTM · TMS · IPS · WAF, Genians NAC 등 보안 솔루션 및 장비 운영 및 내/외부망 사이버침해행위 식별 및 차단',
+        '국가정보원 주최 · 국가보안기술연구소 주관 2025 사이버공격방어대회(CCE) 공공부 본선 참여',
+      ],
     },
     teamgrit: {
-      name: '(주)팀그릿',
+      name: '(주) 팀그릿',
       position: 'Software Engineer',
       period: '2021.8 - 2023.8',
       task1: '[1] Go언어를 이용한 미디어프로세싱 시스템 개발',
       task2: '[2] 사내 개발 문서 가이드라인 작성 및 개발 문서 관리 방안 고안',
+      details: [
+        'Go언어를 이용한 미디어프로세싱 시스템 개발',
+        '사내 개발 문서 가이드라인 작성 및 개발 문서 관리 방안 고안',
+      ],
     },
   },
   experience: {
     title: 'Experience',
     ccdc: {
-      name: '2025 사이버공격방어대회 (공공부)',
+      name: '2025 사이버공격방어대회',
       host: '국가정보원 주최 / 국가보안기술연구소 주관',
       result: '[1] 공공부 예선 20등 / 본선 15등',
+      details: [
+        '공공부 예선 20등 / 본선 15등',
+      ],
     },
     gdg: {
       name: 'GDG Golang Korea',
@@ -53,11 +75,18 @@ export default {
       task1: '[1] Go언어 커뮤니티 활성화를 위한 이벤트 기획 및 진행',
       task2:
         '[2] GopherCon Korea 2023 전반적인 행사 계획(준비위원회 수립 / 미디어팀 리드 / CoC팀)',
+      details: [
+        'Go언어 커뮤니티 활성화를 위한 이벤트 기획 및 진행',
+        'GopherCon Korea 2023 전반적인 행사 계획(준비위원회 수립 / 미디어팀 리드 / CoC팀)',
+      ],
     },
     pycon_korea: {
       name: 'PyCon Korea',
       period: "2026.02 ~ / 미디어팀 / park.hyunsang{'@'}python.or.kr",
       task1: '[1] PyCon Korea 2026 미디어팀 활동',
+      details: [
+        'PyCon Korea 2026 미디어팀 활동',
+      ],
     },
   },
   projects: {

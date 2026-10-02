@@ -2,5 +2,6 @@
   "buildCommand": "yarn build",
   "devCommand": "yarn serve",
   "installCommand": "yarn install",
-  "framework": "vue"
+  "framework": "vue",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

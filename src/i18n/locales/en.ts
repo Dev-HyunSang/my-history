@@ -23,6 +23,13 @@ export default {
   },
   work: {
     title: 'Work Experience',
+    viewDetails: 'View details →',
+    back: '← Back',
+    alan: {
+      name: 'Alan Inc.',
+      position: 'Software Engineer',
+      period: '2026.09 ~ Present',
+    },
     army: {
       name: 'ROK Army Cyber Operations Center',
       position: 'Information Security (Cyber Monitoring) MOS / CERT / Information Security 24-1st',
@@ -33,6 +40,14 @@ export default {
       task2:
         '[2] Blocked access to compromise indicators through security equipment based on '
         + 'threat intelligence from related agencies',
+      details: [
+        'Managed cyber operation situations and performed initial incident response for '
+        + 'internal and external cyber threats in Army operational control units',
+        'Blocked access to compromise indicators through security equipment based on '
+        + 'threat intelligence from related agencies',
+        'Competed in the finals of the 2025 Cyber Attack Defense Competition (CCE), Public Sector, '
+        + 'hosted by the National Intelligence Service and organized by the National Security Research Institute',
+      ],
     },
     teamgrit: {
       name: 'TeamGRIT, Inc.',
@@ -42,6 +57,11 @@ export default {
       task2:
         '[2] Created internal development documentation guidelines and devised '
         + 'document management strategies',
+      details: [
+        'Developed media processing system using Go language',
+        'Created internal development documentation guidelines and devised '
+        + 'document management strategies',
+      ],
     },
   },
   experience: {
@@ -52,6 +72,9 @@ export default {
         'Hosted by National Intelligence Service / '
         + 'Organized by National Security Research Institute',
       result: '[1] Public Sector: 20th in Preliminaries / 15th in Finals',
+      details: [
+        'Public Sector: 20th in Preliminaries / 15th in Finals',
+      ],
     },
     gdg: {
       name: 'GDG Golang Korea',
@@ -60,11 +83,19 @@ export default {
       task2:
         '[2] Overall event planning for GopherCon Korea 2023 '
         + '(Organizing committee establishment / Media team lead / CoC team)',
+      details: [
+        'Planned and conducted events to activate the Go language community',
+        'Overall event planning for GopherCon Korea 2023 '
+        + '(Organizing committee establishment / Media team lead / CoC team)',
+      ],
     },
     pycon_korea: {
       name: 'PyCon Korea',
       period: "2026.02 ~ / Media Team / park.hyunsang{'@'}python.or.kr",
       task1: '[1] PyCon Korea 2026 Media Team',
+      details: [
+        'PyCon Korea 2026 Media Team',
+      ],
     },
   },
   projects: {
