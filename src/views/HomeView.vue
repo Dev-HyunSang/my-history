@@ -125,6 +125,16 @@
       <div class="space-y-6 mb-4">
         <div>
           <div class="flex items-center gap-2 text-xl">
+            <span class="font-semibold">{{ t('work.alan.name') }}</span>
+          </div>
+          <p class="text-gray-700 dark:text-gray-300">{{ t('work.alan.position') }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ t('work.alan.period') }}</p>
+          <router-link v-if="hasDetails('work.alan')" to="/work/alan" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
+        </div>
+      </div>
+      <div class="space-y-6 mb-4">
+        <div>
+          <div class="flex items-center gap-2 text-xl">
             <span class="font-semibold">{{ t('work.army.name') }}</span>
           </div>
           <p class="text-gray-700 dark:text-gray-300">{{ t('work.army.position') }}</p>
@@ -133,6 +143,7 @@
             <p class="font-semibold text-m">{{ t('work.army.task1') }}</p>
             <p class="font-semibold text-m">{{ t('work.army.task2') }}</p>
           </div>
+          <router-link v-if="hasDetails('work.army')" to="/work/army" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
       <div class="space-y-6">
@@ -144,6 +155,7 @@
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ t('work.teamgrit.period') }}</p>
           <p class="font-semibold text-m">{{ t('work.teamgrit.task1') }}</p>
           <p class="font-semibold text-m">{{ t('work.teamgrit.task2') }}</p>
+          <router-link v-if="hasDetails('work.teamgrit')" to="/work/teamgrit" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
     </section>
@@ -160,6 +172,7 @@
           </div>
           <p class="text-m text-gray-600 dark:text-gray-400 mt-1">{{ t('experience.ccdc.host') }}</p>
           <p class="font-semibold pt-1">{{ t('experience.ccdc.result') }}</p>
+          <router-link v-if="hasDetails('experience.ccdc')" to="/experience/ccdc" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
       <div class="space-y-3 mt-4">
@@ -170,6 +183,7 @@
           <p class="text-m text-gray-600 dark:text-gray-400 mt-1">{{ t('experience.gdg.period') }}</p>
           <p class="font-semibold pt-1">{{ t('experience.gdg.task1') }}</p>
           <p class="font-semibold pt-1">{{ t('experience.gdg.task2') }}</p>
+          <router-link v-if="hasDetails('experience.gdg')" to="/experience/gdg" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
       <div class="space-y-3 mt-4">
@@ -179,6 +193,7 @@
           </div>
           <p class="text-m text-gray-600 dark:text-gray-400 mt-1">{{ t('experience.pycon_korea.period') }}</p>
           <p class="font-semibold pt-1">{{ t('experience.pycon_korea.task1') }}</p>
+          <router-link v-if="hasDetails('experience.pycon_korea')" to="/experience/pycon_korea" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
     </section>
@@ -407,6 +422,12 @@ export default class HomeView extends Vue {
 
   get t() {
     return this.$t.bind(this);
+  }
+
+  // 로케일에 <section>.<id>.details 배열이 있을 때만 자세히 보기 링크 노출
+  hasDetails(key: string): boolean {
+    const details = this.$tm(`${key}.details`) as unknown;
+    return Array.isArray(details) && details.length > 0;
   }
 
   changeLanguage(lang: string): void {
