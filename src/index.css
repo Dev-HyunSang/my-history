@@ -4,6 +4,6 @@
 
 @layer base {
   html {
-    @apply bg-white text-black dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300;
+    @apply bg-[#c7c7c7] text-black dark:bg-[#111] dark:text-[#eee] transition-colors duration-300;
   }
 }

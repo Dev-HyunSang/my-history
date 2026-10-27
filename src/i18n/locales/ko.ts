@@ -6,18 +6,21 @@ export default {
     github: 'GitHub',
     email: 'Email',
     linkedin: 'LinkedIn',
-    resume: 'Resume',
   },
   education: {
     title: 'Education',
     school1: {
       name: '순천향대학교',
-      major: '정보보호학, 공학사',
+      url: 'https://sch.ac.kr',
+      major: '정보보호학(공학사)',
+      position: '학부생',
       period: '2023.2 - 2029.2',
     },
     school2: {
       name: '순천향대학교',
-      major: '법학, 부전공',
+      url: 'https://sch.ac.kr',
+      major: '법학(부전공)',
+      position: '학부생',
       period: '2026.2 - 2029.2',
     },
   },
@@ -27,20 +30,20 @@ export default {
     back: '← 돌아가기',
     alan: {
       name: 'Alan Inc.',
-      position: 'Physical computing engineer',
+      url: 'https://alango.xyz/',
+      position: '소프트웨어 엔지니어',
       period: '2026.09 ~ 현재',
     },
     army: {
       name: '육군 사이버작전센터 O작전단',
-      position: '정보보호(사이버관제)병 / Computer Emergency Response Team',
+      url: 'https://www.army.mil.kr/',
+      position: '정보보호병',
       period: '2024.3 - 2025.9 / 관제 직책수행 - 2024.5 ~ 2025.9',
       location: '계룡시, 대한민국',
-      task1:
+      tasks: [
         '[1] 육군 작전통제부대(육직, 작전사, 군/사단) 대/내외 사이버작전상황 관리 및 침해대응사고 초기대응 임무수행',
-      task2:
         '[2] Splunk SIEM, AhnLab SOAR, AhnLab UTM · TMS · IPS · WAF, Genians NAC 등 보안 솔루션 및 장비 운영 및 내/외부망 사이버침해행위 식별 및 차단',
-      task3:
-        '국가정보원 주최 · 국가보안기술연구소 주관  2025 사이버공격방어대회(CCE) 공공부 본선 참여',
+      ],
       details: [
         '육군 작전통제부대(육직, 작전사, 군/사단) 대/내외 사이버작전상황 관리 및 침해대응사고 초기대응 임무수행',
         'Splunk SIEM, AhnLab SOAR, AhnLab UTM · TMS · IPS · WAF, Genians NAC 등 보안 솔루션 및 장비 운영 및 내/외부망 사이버침해행위 식별 및 차단',
@@ -49,10 +52,13 @@ export default {
     },
     teamgrit: {
       name: '(주) 팀그릿',
-      position: 'Software Engineer',
+      url: 'https://teamgrit.kr',
+      position: '소프트웨어 엔지니어',
       period: '2021.8 - 2023.8',
-      task1: '[1] Go언어를 이용한 미디어프로세싱 시스템 개발',
-      task2: '[2] 사내 개발 문서 가이드라인 작성 및 개발 문서 관리 방안 고안',
+      tasks: [
+        '[1] Go언어를 이용한 미디어프로세싱 시스템 개발',
+        '[2] 사내 개발 문서 가이드라인 작성 및 개발 문서 관리 방안 고안',
+      ],
       details: [
         'Go언어를 이용한 미디어프로세싱 시스템 개발',
         '사내 개발 문서 가이드라인 작성 및 개발 문서 관리 방안 고안',
@@ -63,18 +69,25 @@ export default {
     title: 'Experience',
     ccdc: {
       name: '2025 사이버공격방어대회',
-      host: '국가정보원 주최 / 국가보안기술연구소 주관',
-      result: '[1] 공공부 예선 20등 / 본선 15등',
+      url: 'https://cce.cstec.kr/',
+      position: '공공부 참가자',
+      tasks: [
+        '[1] 국가정보원 주최 · 국가보안기술연구소 주관',
+        '[2] 공공부 예선 20등 / 본선 15등',
+      ],
       details: [
         '공공부 예선 20등 / 본선 15등',
       ],
     },
     gdg: {
       name: 'GDG Golang Korea',
-      period: '2023.01 ~ 2024.03 / 오거나이저',
-      task1: '[1] Go언어 커뮤니티 활성화를 위한 이벤트 기획 및 진행',
-      task2:
+      url: 'https://gdg.community.dev/gdg-golang-korea/',
+      position: '오거나이저',
+      period: '2023.01 ~ 2024.03',
+      tasks: [
+        '[1] Go언어 커뮤니티 활성화를 위한 이벤트 기획 및 진행',
         '[2] GopherCon Korea 2023 전반적인 행사 계획(준비위원회 수립 / 미디어팀 리드 / CoC팀)',
+      ],
       details: [
         'Go언어 커뮤니티 활성화를 위한 이벤트 기획 및 진행',
         'GopherCon Korea 2023 전반적인 행사 계획(준비위원회 수립 / 미디어팀 리드 / CoC팀)',
@@ -82,8 +95,13 @@ export default {
     },
     pycon_korea: {
       name: 'PyCon Korea',
-      period: "2026.02 ~ / 미디어팀 / park.hyunsang{'@'}python.or.kr",
-      task1: '[1] PyCon Korea 2026 미디어팀 활동',
+      url: 'https://www.python.or.kr/',
+      position: '오거나이저',
+      period: '2026.02 ~ 현재',
+      tasks: [
+        '[1] PyCon Korea 2026 미디어팀 활동',
+        "Email -  park.hyunsang{'@'}python.or.kr",
+      ],
       details: [
         'PyCon Korea 2026 미디어팀 활동',
       ],

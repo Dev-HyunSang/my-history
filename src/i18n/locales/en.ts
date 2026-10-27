@@ -6,18 +6,21 @@ export default {
     github: 'GitHub',
     email: 'Email',
     linkedin: 'LinkedIn',
-    resume: 'Resume',
   },
   education: {
     title: 'Education',
     school1: {
       name: 'Soonchunhyang University',
-      major: 'Information Security, Bachelor of Engineering - BE',
+      url: 'https://sch.ac.kr',
+      major: 'Information Security (B.E.)',
+      position: 'Undergraduate Student',
       period: '2023.2 - 2029.2',
     },
     school2: {
       name: 'Soonchunhyang University',
-      major: 'Minor in Law',
+      url: 'https://sch.ac.kr',
+      major: 'Law (Minor)',
+      position: 'Undergraduate Student',
       period: '2026.2 - 2029.2',
     },
   },
@@ -27,72 +30,83 @@ export default {
     back: '← Back',
     alan: {
       name: 'Alan Inc.',
+      url: 'https://alango.xyz/',
       position: 'Software Engineer',
       period: '2026.09 ~ Present',
     },
     army: {
-      name: 'ROK Army Cyber Operations Center',
-      position: 'Information Security (Cyber Monitoring) MOS / CERT / Information Security 24-1st',
-      period: '2024.3 - 2025.9 / Center Duty: 2024.5 ~ 2025.9',
-      task1:
-        '[1] Managed cyber operation situations and performed initial incident response for '
-        + 'internal and external cyber threats in Army operational control units',
-      task2:
-        '[2] Blocked access to compromise indicators through security equipment based on '
-        + 'threat intelligence from related agencies',
+      name: 'ROK Army Cyber Operations Center, O Operations Group',
+      url: 'https://www.army.mil.kr/',
+      position: 'Information Security Specialist',
+      period: '2024.3 - 2025.9 / Monitoring Duty: 2024.5 ~ 2025.9',
+      location: 'Gyeryong, Republic of Korea',
+      tasks: [
+        '[1] Managed internal/external cyber operation situations and performed initial incident response '
+        + 'for Army operational control units (Army HQ, Operations Command, Corps/Divisions)',
+        '[2] Operated security solutions and equipment including Splunk SIEM, AhnLab SOAR, AhnLab UTM · TMS · IPS · WAF, '
+        + 'and Genians NAC to identify and block cyber intrusions on internal/external networks',
+      ],
       details: [
-        'Managed cyber operation situations and performed initial incident response for '
-        + 'internal and external cyber threats in Army operational control units',
-        'Blocked access to compromise indicators through security equipment based on '
-        + 'threat intelligence from related agencies',
-        'Competed in the finals of the 2025 Cyber Attack Defense Competition (CCE), Public Sector, '
+        'Managed internal/external cyber operation situations and performed initial incident response '
+        + 'for Army operational control units (Army HQ, Operations Command, Corps/Divisions)',
+        'Operated security solutions and equipment including Splunk SIEM, AhnLab SOAR, AhnLab UTM · TMS · IPS · WAF, '
+        + 'and Genians NAC to identify and block cyber intrusions on internal/external networks',
+        'Competed in the Public Sector finals of the 2025 Cyber Conflict Exercise (CCE), '
         + 'hosted by the National Intelligence Service and organized by the National Security Research Institute',
       ],
     },
     teamgrit: {
       name: 'TeamGRIT, Inc.',
+      url: 'https://teamgrit.kr',
       position: 'Software Engineer',
       period: '2021.8 - 2023.8',
-      task1: '[1] Developed media processing system using Go language',
-      task2:
-        '[2] Created internal development documentation guidelines and devised '
-        + 'document management strategies',
+      tasks: [
+        '[1] Developed a media processing system in Go',
+        '[2] Wrote internal development documentation guidelines and devised a documentation management process',
+      ],
       details: [
-        'Developed media processing system using Go language',
-        'Created internal development documentation guidelines and devised '
-        + 'document management strategies',
+        'Developed a media processing system in Go',
+        'Wrote internal development documentation guidelines and devised a documentation management process',
       ],
     },
   },
   experience: {
     title: 'Experience',
     ccdc: {
-      name: '2025 Cyber Attack Defense Competition (Public Sector)',
-      host:
-        'Hosted by National Intelligence Service / '
-        + 'Organized by National Security Research Institute',
-      result: '[1] Public Sector: 20th in Preliminaries / 15th in Finals',
+      name: '2025 Cyber Conflict Exercise (CCE)',
+      url: 'https://cce.cstec.kr/',
+      position: 'Public Sector Participant',
+      tasks: [
+        '[1] Hosted by the National Intelligence Service · Organized by the National Security Research Institute',
+        '[2] Public Sector: 20th in Preliminaries / 15th in Finals',
+      ],
       details: [
         'Public Sector: 20th in Preliminaries / 15th in Finals',
       ],
     },
     gdg: {
       name: 'GDG Golang Korea',
-      period: '2023.01 ~ 2024.03 / Organizer',
-      task1: '[1] Planned and conducted events to activate the Go language community',
-      task2:
-        '[2] Overall event planning for GopherCon Korea 2023 '
-        + '(Organizing committee establishment / Media team lead / CoC team)',
+      url: 'https://gdg.community.dev/gdg-golang-korea/',
+      position: 'Organizer',
+      period: '2023.01 ~ 2024.03',
+      tasks: [
+        '[1] Planned and ran events to grow the Go community',
+        '[2] Overall event planning for GopherCon Korea 2023 (Organizing committee / Media team lead / CoC team)',
+      ],
       details: [
-        'Planned and conducted events to activate the Go language community',
-        'Overall event planning for GopherCon Korea 2023 '
-        + '(Organizing committee establishment / Media team lead / CoC team)',
+        'Planned and ran events to grow the Go community',
+        'Overall event planning for GopherCon Korea 2023 (Organizing committee / Media team lead / CoC team)',
       ],
     },
     pycon_korea: {
       name: 'PyCon Korea',
-      period: "2026.02 ~ / Media Team / park.hyunsang{'@'}python.or.kr",
-      task1: '[1] PyCon Korea 2026 Media Team',
+      url: 'https://www.python.or.kr/',
+      position: 'Organizer',
+      period: '2026.02 ~ Present',
+      tasks: [
+        '[1] PyCon Korea 2026 Media Team',
+        "Email -  park.hyunsang{'@'}python.or.kr",
+      ],
       details: [
         'PyCon Korea 2026 Media Team',
       ],
@@ -102,17 +116,17 @@ export default {
     title: 'Projects',
     project1: {
       name: 'VMS(Video Management System) at TeamGRIT, Inc.',
-      description: 'Developed a video management system that stores videos from TeamGRIT and allows them to be viewed using the HLS protocol.',
+      description: 'Developed a video management system that stores videos streamed by TeamGRIT and serves them over the HLS protocol.',
       period: '2022.08 ~ 2023.06',
-      stack: 'Golang, FFmpeg(HLS), SQLite, MySQL, AWS(EC2 · S3 · CloudFront), NCP(VM · Object Storage), Docker, GitHub Actions',
+      stack: 'Golang, FFmpeg(HLS), AWS(S3, CloudFront), GitHub Actions, Docker',
       github: null,
       blog: null,
     },
     project2: {
       name: 'My Own Library',
-      description: 'This service enables users to register and manage their personal book collections using ISBN barcodes and other identifiers, while also allowing them to post book reviews and share them with other users.',
+      description: 'A service for registering and managing the books you own via ISBN barcodes, writing book reviews, and sharing them with other users.',
       period: '2026.01 ~ 2026.02',
-      stack: 'Golang, Flutter, Azure(VM · DataBase for MySQL, Cache for Redis), Docker, GitHub Actions',
+      stack: 'Golang, Flutter, Docker, Azure(VM · DataBase for MySQL, Cache for Redis), GitHub Actions',
       github: 'https://github.com/dev-hyunsang/my-own-library-backend',
       blog: 'https://blog.hyunsang.dev/posts/%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%82%98%EB%A7%8C%EC%9D%98-%EC%84%9C%EC%9E%AC/',
     },
@@ -123,7 +137,7 @@ export default {
     frameworks: 'Frameworks',
     database: 'DataBase',
     infrastructure: 'Infrastructure',
-    security: 'Cyber Security Equipment',
+    security: 'Cyber Security Solution',
   },
   footer: {
     title: 'Email Collection Prohibition',

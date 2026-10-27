@@ -84,13 +84,6 @@
           <BriefcaseIcon class="w-5 h-5" />
           <span>{{ t('profile.linkedin') }}</span>
         </a>
-        <a
-          href="https://drive.google.com/file/d/1V9g8ykFg2B8mj5i-2vQugmuyhULxZOd3/view?usp=drivesdk"
-          class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors"
-        >
-          <DocumentTextIcon class="w-5 h-5" />
-          <span>{{ t('profile.resume') }}</span>
-        </a>
       </div>
     </header>
 
@@ -224,9 +217,11 @@
       <div class="space-y-6 mb-4">
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('work.alan.name') }}</span>
+            <span class="font-semibold">{{ t('work.alan.position') }}</span>
           </div>
-          <p class="text-gray-700 dark:text-gray-300">{{ t('work.alan.position') }}</p>
+          <p class="text-gray-700 dark:text-gray-300">
+            <a v-if="companyUrl('work.alan')" :href="companyUrl('work.alan')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('work.alan.name') }}</a><template v-else>{{ t('work.alan.name') }}</template>
+          </p>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ t('work.alan.period') }}</p>
           <router-link v-if="hasDetails('work.alan')" to="/work/alan" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
@@ -234,26 +229,26 @@
       <div class="space-y-6 mb-4">
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('work.army.name') }}</span>
+            <span class="font-semibold">{{ t('work.army.position') }}</span>
           </div>
-          <p class="text-gray-700 dark:text-gray-300">{{ t('work.army.position') }}</p>
+          <p class="text-gray-700 dark:text-gray-300">
+            <a v-if="companyUrl('work.army')" :href="companyUrl('work.army')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('work.army.name') }}</a><template v-else>{{ t('work.army.name') }}</template>
+          </p>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ t('work.army.period') }}</p>
-          <div>
-            <p class="font-semibold text-m">{{ t('work.army.task1') }}</p>
-            <p class="font-semibold text-m">{{ t('work.army.task2') }}</p>
-          </div>
+          <p v-for="(task, i) in tasks('work.army')" :key="i" class="font-semibold pt-1">{{ task }}</p>
           <router-link v-if="hasDetails('work.army')" to="/work/army" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
       <div class="space-y-6">
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('work.teamgrit.name') }}</span>
+            <span class="font-semibold">{{ t('work.teamgrit.position') }}</span>
           </div>
-          <p class="text-gray-700 dark:text-gray-300">{{ t('work.teamgrit.position') }}</p>
+          <p class="text-gray-700 dark:text-gray-300">
+            <a v-if="companyUrl('work.teamgrit')" :href="companyUrl('work.teamgrit')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('work.teamgrit.name') }}</a><template v-else>{{ t('work.teamgrit.name') }}</template>
+          </p>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-2">{{ t('work.teamgrit.period') }}</p>
-          <p class="font-semibold text-m">{{ t('work.teamgrit.task1') }}</p>
-          <p class="font-semibold text-m">{{ t('work.teamgrit.task2') }}</p>
+          <p v-for="(task, i) in tasks('work.teamgrit')" :key="i" class="font-semibold pt-1">{{ task }}</p>
           <router-link v-if="hasDetails('work.teamgrit')" to="/work/teamgrit" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
@@ -267,16 +262,20 @@
       <div class="space-y-4">
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('education.school1.name') }}</span>
+            <span class="font-semibold">{{ t('education.school1.position') }}</span>
           </div>
-          <p class="text-gray-700 dark:text-gray-300">{{ t('education.school1.major') }}</p>
+          <p class="text-gray-700 dark:text-gray-300">
+            {{ t('education.school1.major') }}, <a v-if="companyUrl('education.school1')" :href="companyUrl('education.school1')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('education.school1.name') }}</a><template v-else>{{ t('education.school1.name') }}</template>
+          </p>
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('education.school1.period') }}</p>
         </div>
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('education.school2.name') }}</span>
+            <span class="font-semibold">{{ t('education.school2.position') }}</span>
           </div>
-          <p class="text-gray-700 dark:text-gray-300">{{ t('education.school2.major') }}</p>
+          <p class="text-gray-700 dark:text-gray-300">
+            {{ t('education.school2.major') }}, <a v-if="companyUrl('education.school2')" :href="companyUrl('education.school2')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('education.school2.name') }}</a><template v-else>{{ t('education.school2.name') }}</template>
+          </p>
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('education.school2.period') }}</p>
         </div>
       </div>
@@ -290,31 +289,38 @@
       <div class="space-y-3">
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('experience.ccdc.name') }}</span>
+            <span class="font-semibold">{{ t('experience.ccdc.position') }}</span>
           </div>
-          <p class="text-m text-gray-600 dark:text-gray-400 mt-1">{{ t('experience.ccdc.host') }}</p>
-          <p class="font-semibold pt-1">{{ t('experience.ccdc.result') }}</p>
+          <p class="text-gray-700 dark:text-gray-300">
+            <a v-if="companyUrl('experience.ccdc')" :href="companyUrl('experience.ccdc')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('experience.ccdc.name') }}</a><template v-else>{{ t('experience.ccdc.name') }}</template>
+          </p>
+          <p v-for="(task, i) in tasks('experience.ccdc')" :key="i" class="font-semibold pt-1">{{ task }}</p>
           <router-link v-if="hasDetails('experience.ccdc')" to="/experience/ccdc" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
       <div class="space-y-3 mt-4">
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('experience.gdg.name') }}</span>
+            <span class="font-semibold">{{ t('experience.gdg.position') }}</span>
           </div>
+          <p class="text-gray-700 dark:text-gray-300">
+            <a v-if="companyUrl('experience.gdg')" :href="companyUrl('experience.gdg')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('experience.gdg.name') }}</a><template v-else>{{ t('experience.gdg.name') }}</template>
+          </p>
           <p class="text-m text-gray-600 dark:text-gray-400 mt-1">{{ t('experience.gdg.period') }}</p>
-          <p class="font-semibold pt-1">{{ t('experience.gdg.task1') }}</p>
-          <p class="font-semibold pt-1">{{ t('experience.gdg.task2') }}</p>
+          <p v-for="(task, i) in tasks('experience.gdg')" :key="i" class="font-semibold pt-1">{{ task }}</p>
           <router-link v-if="hasDetails('experience.gdg')" to="/experience/gdg" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
       <div class="space-y-3 mt-4">
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('experience.pycon_korea.name') }}</span>
+            <span class="font-semibold">{{ t('experience.pycon_korea.position') }}</span>
           </div>
+          <p class="text-gray-700 dark:text-gray-300">
+            <a v-if="companyUrl('experience.pycon_korea')" :href="companyUrl('experience.pycon_korea')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('experience.pycon_korea.name') }}</a><template v-else>{{ t('experience.pycon_korea.name') }}</template>
+          </p>
           <p class="text-m text-gray-600 dark:text-gray-400 mt-1">{{ t('experience.pycon_korea.period') }}</p>
-          <p class="font-semibold pt-1">{{ t('experience.pycon_korea.task1') }}</p>
+          <p v-for="(task, i) in tasks('experience.pycon_korea')" :key="i" class="font-semibold pt-1">{{ task }}</p>
           <router-link v-if="hasDetails('experience.pycon_korea')" to="/experience/pycon_korea" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
@@ -382,7 +388,6 @@ import {
   CodeBracketIcon,
   EnvelopeIcon,
   BriefcaseIcon,
-  DocumentTextIcon,
   SunIcon,
   MoonIcon,
 } from '@heroicons/vue/24/outline';
@@ -393,7 +398,6 @@ import {
     CodeBracketIcon,
     EnvelopeIcon,
     BriefcaseIcon,
-    DocumentTextIcon,
     SunIcon,
     MoonIcon,
   },
@@ -428,6 +432,18 @@ export default class HomeView extends Vue {
   hasDetails(key: string): boolean {
     const details = this.$tm(`${key}.details`) as unknown;
     return Array.isArray(details) && details.length > 0;
+  }
+
+  // 로케일 <section>.<id>.url 원문. $t는 URL의 @·| 를 메시지 문법으로 해석하므로 $tm 사용
+  companyUrl(key: string): string {
+    const url = this.$tm(`${key}.url`) as unknown;
+    return typeof url === 'string' ? url : '';
+  }
+
+  // 로케일 <section>.<id>.tasks 배열. $tm은 원문을 주므로 $rt로 {'@'} 같은 문법을 렌더링
+  tasks(key: string): string[] {
+    const items = this.$tm(`${key}.tasks`) as unknown;
+    return Array.isArray(items) ? items.map((item) => this.$rt(item)) : [];
   }
 
   changeLanguage(lang: string): void {
