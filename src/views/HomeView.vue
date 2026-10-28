@@ -89,6 +89,14 @@
 
     <hr class="my-8 border-gray-300 dark:border-gray-700">
 
+    <!-- Summary Section -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">{{ t('summary.title') }}</h2>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">{{ t('summary.content') }}</p>
+    </section>
+
+    <hr class="my-8 border-gray-300 dark:border-gray-700">
+
     <!-- Skills Section -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">{{ t('skills.title') }}</h2>
@@ -140,6 +148,10 @@
             <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c6.616 0 12-5.383 12-12S18.616 0 12 0zm0 1.144c5.995 0 10.856 4.86 10.856 10.856 0 5.995-4.86 10.856-10.856 10.856-5.996 0-10.856-4.86-10.856-10.856C1.144 6.004 6.004 1.144 12 1.144zM8.37 5.868a6.707 6.707 0 0 0-.423.005c-.983.056-1.573.517-1.735 1.472-.115.665-.096 1.348-.143 2.017-.013.35-.05.697-.115 1.038-.134.609-.397.7-.965.91l.059.058c.926.405 1.008.936 1.022 1.857.01.7-.009 1.4.025 2.1.034.478.156.911.614 1.14.317.16.694.203 1.088.22.256.013.511.005.768.005h.18v-1.028c-.349 0-.678.005-1.006-.002-.498-.01-.727-.195-.787-.69-.043-.392-.028-.79-.039-1.186-.024-.752-.039-1.503-.482-2.17-.027-.042-.048-.09-.074-.137.349-.2.607-.412.743-.72.182-.402.257-.84.278-1.278.027-.504.005-1.01.037-1.514.037-.572.306-.777.882-.82.202-.015.405-.005.61-.008h.318V5.875c-.238-.002-.46-.006-.68-.007h-.175zm7.594.005c-.339.003-.677.017-1.009.023v1.03c.354 0 .69-.007 1.027.001.5.013.72.2.776.7.046.4.028.806.04 1.21.022.744.04 1.487.456 2.162.048.076.09.156.141.247-.418.276-.637.58-.766.993-.16.498-.204 1.014-.22 1.531-.018.502-.01 1.006-.04 1.508-.035.476-.263.678-.745.705-.31.018-.624.007-.947.01v1.028c.063 0 .12.003.176.003.283 0 .568.015.849-.003.563-.036 1.07-.168 1.417-.665.2-.285.298-.618.33-.97.05-.534.044-1.073.066-1.609.035-.78.07-1.559.545-2.233l.07-.093c-.646-.301-1.023-.772-1.1-1.484-.053-.497-.041-1-.056-1.5-.017-.428-.057-.856-.206-1.268-.152-.425-.424-.715-.85-.849z" /></svg>
               Swagger
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12.005 0L4.952 7.053a9.865 9.865 0 000 14.022 9.866 9.866 0 0014.022 0c3.984-3.9 3.986-10.205.085-14.023l-1.744 1.743c2.904 2.905 2.904 7.634 0 10.538s-7.634 2.904-10.538 0-2.904-7.634 0-10.538l4.647-4.646.582-.665zm3.568 3.899a1.327 1.327 0 00-1.327 1.327 1.327 1.327 0 001.327 1.328A1.327 1.327 0 0016.9 5.226 1.327 1.327 0 0015.573 3.9z" /></svg>
+              PyTorch
             </span>
           </div>
         </div>
@@ -198,7 +210,15 @@
             </span>
             <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.5 4.5v6c0 5.55 4.5 10.74 10.5 12 6-1.26 10.5-6.45 10.5-12v-6L12 0zm0 2.18l8.5 3.64v4.68c0 4.54-3.62 8.79-8.5 9.94-4.88-1.15-8.5-5.4-8.5-9.94V5.82L12 2.18z" /></svg>
-              UTM/TMS/IPS/IDS
+              AhnLab UTM
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.5 4.5v6c0 5.55 4.5 10.74 10.5 12 6-1.26 10.5-6.45 10.5-12v-6L12 0zm0 2.18l8.5 3.64v4.68c0 4.54-3.62 8.79-8.5 9.94-4.88-1.15-8.5-5.4-8.5-9.94V5.82L12 2.18z" /></svg>
+              AhnLab TMS
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.5 4.5v6c0 5.55 4.5 10.74 10.5 12 6-1.26 10.5-6.45 10.5-12v-6L12 0zm0 2.18l8.5 3.64v4.68c0 4.54-3.62 8.79-8.5 9.94-4.88-1.15-8.5-5.4-8.5-9.94V5.82L12 2.18z" /></svg>
+              AhnLab IPS·IDS
             </span>
             <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200">
               <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.5 4.5v6c0 5.55 4.5 10.74 10.5 12 6-1.26 10.5-6.45 10.5-12v-6L12 0zm0 2.18l8.5 3.64v4.68c0 4.54-3.62 8.79-8.5 9.94-4.88-1.15-8.5-5.4-8.5-9.94V5.82L12 2.18z" /></svg>

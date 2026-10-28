@@ -7,6 +7,13 @@ export default {
     email: 'Email',
     linkedin: 'LinkedIn',
   },
+  summary: {
+    title: 'Summary',
+    content:
+      '백엔드 시스템 개발과 보안 인프라 운영 경험 3년 이상의 소프트웨어 엔지니어입니다.\n'
+      + 'Go언어를 이용하여 미디어 프로세싱 서버 개발, 클라우드 인프라, 보안관제의 경험이 있습니다.\n'
+      + '현재 Alan Inc.에서 소프트웨어 엔지니어로서 Physical Computing 관련 업무를 하고 있습니다.\n',
+  },
   education: {
     title: 'Education',
     school1: {

@@ -7,6 +7,13 @@ export default {
     email: 'Email',
     linkedin: 'LinkedIn',
   },
+  summary: {
+    title: 'Summary',
+    content:
+      'Software Engineer with 3+ years of experience in backend development and security infrastructure operations.\n'
+      + 'Experienced in building media processing servers in Go, cloud infrastructure, and security monitoring.\n'
+      + 'Currently working on Physical Computing as a Software Engineer at Alan Inc.\n',
+  },
   education: {
     title: 'Education',
     school1: {
