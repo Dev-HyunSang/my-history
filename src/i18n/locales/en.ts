@@ -1,6 +1,6 @@
 export default {
   profile: {
-    name: 'HyunSang Park',
+    name: 'Hyunsang Park',
     title: 'Software Engineer',
     blog: 'Blog',
     github: 'GitHub',

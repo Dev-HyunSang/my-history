@@ -1,7 +1,7 @@
 export default {
   profile: {
     name: '박현상',
-    title: 'Software Engineer',
+    title: '소프트웨어 엔지니어',
     blog: 'Blog',
     github: 'GitHub',
     email: 'Email',
