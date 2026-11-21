@@ -282,21 +282,21 @@
       <div class="space-y-4">
         <div>
           <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('education.school1.position') }}</span>
-          </div>
-          <p class="text-gray-700 dark:text-gray-300">
-            {{ t('education.school1.major') }}, <a v-if="companyUrl('education.school1')" :href="companyUrl('education.school1')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('education.school1.name') }}</a><template v-else>{{ t('education.school1.name') }}</template>
-          </p>
-          <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('education.school1.period') }}</p>
-        </div>
-        <div>
-          <div class="flex items-center gap-2 text-xl">
             <span class="font-semibold">{{ t('education.school2.position') }}</span>
           </div>
           <p class="text-gray-700 dark:text-gray-300">
             {{ t('education.school2.major') }}, <a v-if="companyUrl('education.school2')" :href="companyUrl('education.school2')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('education.school2.name') }}</a><template v-else>{{ t('education.school2.name') }}</template>
           </p>
           <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('education.school2.period') }}</p>
+        </div>
+        <div>
+          <div class="flex items-center gap-2 text-xl">
+            <span class="font-semibold">{{ t('education.school1.position') }}</span>
+          </div>
+          <p class="text-gray-700 dark:text-gray-300">
+            {{ t('education.school1.major') }}, <a v-if="companyUrl('education.school1')" :href="companyUrl('education.school1')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('education.school1.name') }}</a><template v-else>{{ t('education.school1.name') }}</template>
+          </p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('education.school1.period') }}</p>
         </div>
       </div>
     </section>
@@ -307,6 +307,19 @@
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">{{ t('experience.title') }}</h2>
       <div class="space-y-3">
+        <div>
+          <div class="flex items-center gap-2 text-xl">
+            <span class="font-semibold">{{ t('experience.pycon_korea.position') }}</span>
+          </div>
+          <p class="text-gray-700 dark:text-gray-300">
+            <a v-if="companyUrl('experience.pycon_korea')" :href="companyUrl('experience.pycon_korea')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('experience.pycon_korea.name') }}</a><template v-else>{{ t('experience.pycon_korea.name') }}</template>
+          </p>
+          <p class="text-m text-gray-600 dark:text-gray-400 mt-1">{{ t('experience.pycon_korea.period') }}</p>
+          <p v-for="(task, i) in tasks('experience.pycon_korea')" :key="i" class="font-semibold pt-1">{{ task }}</p>
+          <router-link v-if="hasDetails('experience.pycon_korea')" to="/experience/pycon_korea" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
+        </div>
+      </div>
+      <div class="space-y-3 mt-4">
         <div>
           <div class="flex items-center gap-2 text-xl">
             <span class="font-semibold">{{ t('experience.ccdc.position') }}</span>
@@ -331,19 +344,6 @@
           <router-link v-if="hasDetails('experience.gdg')" to="/experience/gdg" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
         </div>
       </div>
-      <div class="space-y-3 mt-4">
-        <div>
-          <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('experience.pycon_korea.position') }}</span>
-          </div>
-          <p class="text-gray-700 dark:text-gray-300">
-            <a v-if="companyUrl('experience.pycon_korea')" :href="companyUrl('experience.pycon_korea')" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">{{ t('experience.pycon_korea.name') }}</a><template v-else>{{ t('experience.pycon_korea.name') }}</template>
-          </p>
-          <p class="text-m text-gray-600 dark:text-gray-400 mt-1">{{ t('experience.pycon_korea.period') }}</p>
-          <p v-for="(task, i) in tasks('experience.pycon_korea')" :key="i" class="font-semibold pt-1">{{ task }}</p>
-          <router-link v-if="hasDetails('experience.pycon_korea')" to="/experience/pycon_korea" class="inline-block mt-2 text-sm underline text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">{{ t('work.viewDetails') }}</router-link>
-        </div>
-      </div>
     </section>
 
     <hr class="my-8 border-gray-300 dark:border-gray-700">
@@ -352,22 +352,6 @@
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-4">{{ t('projects.title') }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
-          <div class="flex items-center gap-2 text-xl">
-            <span class="font-semibold">{{ t('projects.project1.name') }}</span>
-          </div>
-          <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('projects.project1.period') }}</p>
-          <p class="text-gray-700 dark:text-gray-300 mt-2">{{ t('projects.project1.description') }}</p>
-          <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">{{ t('projects.project1.stack') }}</p>
-          <div class="flex gap-2 mt-3">
-            <a v-if="t('projects.project1.github') && t('projects.project1.github') !== 'projects.project1.github'" :href="t('projects.project1.github')" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" aria-label="GitHub">
-              <CodeBracketIcon class="w-5 h-5" />
-            </a>
-            <a v-if="t('projects.project1.blog') && t('projects.project1.blog') !== 'projects.project1.blog'" :href="t('projects.project1.blog')" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" aria-label="Blog">
-              <NewspaperIcon class="w-5 h-5" />
-            </a>
-          </div>
-        </div>
         <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
           <div class="flex items-center gap-2 text-xl">
             <span class="font-semibold">{{ t('projects.project2.name') }}</span>
@@ -380,6 +364,22 @@
               <CodeBracketIcon class="w-5 h-5" />
             </a>
             <a v-if="t('projects.project2.blog') && t('projects.project2.blog') !== 'projects.project2.blog'" :href="t('projects.project2.blog')" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" aria-label="Blog">
+              <NewspaperIcon class="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4">
+          <div class="flex items-center gap-2 text-xl">
+            <span class="font-semibold">{{ t('projects.project1.name') }}</span>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">{{ t('projects.project1.period') }}</p>
+          <p class="text-gray-700 dark:text-gray-300 mt-2">{{ t('projects.project1.description') }}</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">{{ t('projects.project1.stack') }}</p>
+          <div class="flex gap-2 mt-3">
+            <a v-if="t('projects.project1.github') && t('projects.project1.github') !== 'projects.project1.github'" :href="t('projects.project1.github')" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" aria-label="GitHub">
+              <CodeBracketIcon class="w-5 h-5" />
+            </a>
+            <a v-if="t('projects.project1.blog') && t('projects.project1.blog') !== 'projects.project1.blog'" :href="t('projects.project1.blog')" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors" aria-label="Blog">
               <NewspaperIcon class="w-5 h-5" />
             </a>
           </div>
